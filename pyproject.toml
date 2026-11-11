@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "olat"
+version = "0.1.0"
+description = "Agent-side tooling for the OpenOlat installation olat.vcrp.de (REST API with the browser session cookie)"
+requires-python = ">=3.10"
+dependencies = ["openpyxl"]
+
+[project.scripts]
+olat = "olat.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

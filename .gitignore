@@ -1,0 +1,15 @@
+# Student data - never commit (full data and anonymised copies alike)
+private_downloads/
+anonymized/
+*.xlsx
+*.zip
+
+# Credentials / session cookie (the credentials file lives in this folder - it must never be committed)
+*.env
+
+# Logs, caches, local virtualenv
+olat_check.log
+__pycache__/
+.venv/
+*.egg-info/
+build/
